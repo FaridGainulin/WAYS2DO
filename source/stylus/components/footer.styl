@@ -1,0 +1,84 @@
+.footer
+  background-color: #fff
+
+  &__container
+    display: flex
+    align-items: center
+    flex-direction: column
+    gap: 10px
+    padding 15px 0
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content space-between
+      padding 20px 0 30px
+    +above($breakpoints.md)
+      padding 40px 0 60px
+    +above($breakpoints.xxl)
+      padding 61px 0 93px
+
+  &__brand-block
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+      gap: 15px
+    +above($breakpoints.sm)
+      gap: 20px
+    +above($breakpoints.xxl)
+      gap: 24px
+
+  &__logo
+    width 60px
+    height: 60px
+    +above($breakpoints.sm)
+      width 70px
+      height: 70px
+    +above($breakpoints.md)
+      width 90px
+      height: 90px
+    +above($breakpoints.xxl)
+      width 107px
+      height: 107px
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      border-left: 1px solid #000
+      display: flex
+      flex-direction: column
+      padding-left 15px
+    +above($breakpoints.sm)
+      padding-left 20px
+    +above($breakpoints.xxl)
+      padding-left 21px
+
+  &__privacy
+    cursor pointer
+    text-decoration: underline
+
+  &__connection
+    position relative
+    display: flex
+    align-items: center
+    justify-content center
+    cursor pointer
+    border-radius: 5px
+    transition transform 0.5s, top 0.8s
+    background: linear-gradient(90deg, #2fd767 0%, #2ad063 100%);
+    color: #fff
+    width 150px
+    height: 35px
+    +above($breakpoints.sm)
+      height: 40px
+      border-radius: 6px
+    +above($breakpoints.md)
+      width 180px
+      height: 45px
+      border-radius: 8px
+    +above($breakpoints.xxl)
+      width 203px
+      height: 50px
+      border-radius: 10px
+    &:hover
+      transform: scale(1.02)
+    &:active
+      top: 3px

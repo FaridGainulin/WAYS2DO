@@ -1,0 +1,159 @@
+.input
+  height: 40px
+  width 100%
+  padding: 0 24px;
+  font-family: 'Montserrat-Regular'
+  font-weight: 400
+  font-size: 14px;
+  line-height: 110%
+  color: #000
+  border: 1px solid #000
+  border-radius: 10px;
+  background: #fff
+  position relative
+  overflow hidden
+
+  // &.active
+  //   .input__progress
+  //     opacity 1
+  //     min-width: 40px
+  //     span
+  //       opacity 1
+  // &__progress
+  //   position: absolute
+  //   height: 100%
+  //   top: 0
+  //   left: 0
+  //   background: linear-gradient(90deg, #f68a0e 0%, #ffab07 100%);
+  //   opacity 0
+  //   min-width: 0
+  //   display: flex
+  //   align-items: center
+  //   justify-content: center
+  //   font-size: 16px
+  //   line-height: 16px
+  //   transition: min-width 1s, opacity 0.8s
+  //   color: #fff
+  //   font-weight: bold
+  //   border-radius: 100px
+  //   +above($breakpoints.xxl)
+  //     font-size: 20px
+  //     line-height: 20px
+  //   span
+  //     opacity 0
+  //     transition: 2s
+
+  transition border-color 0.3s, box-shadow 0.3s, border 0.3s, background 0.3s
+  &:hover
+    border 1px solid #2FD767
+  &:focus
+    color: #000
+    caret-color: #2FD767
+    border 1px solid #2FD767
+    box-shadow: 3px 3px 10px 0px #2FD767
+    background: #fff
+    &::placeholder
+      color: #000
+  &::placeholder
+    color: #000
+  +above($breakpoints.sm)
+    padding: 0 15px;
+    font-size: 14px;
+    height: 40px
+  +above($breakpoints.md)
+    padding: 0 20px;
+    font-size: 16px;
+    height: 45px
+  +above($breakpoints.xxl)
+    padding: 0 24px;
+    font-size: 18px;
+    height: 50px
+  &.error
+    border 1px solid $color-error
+    color: $color-error
+    caret-color: $color-error
+    box-shadow: 0px 0px 22px 0px $color-error
+    background: #fff
+    &::placeholder
+      color: $color-error
+    &::-ms-input-placeholder
+      color: $color-error
+    animation: shake 0.6s;
+    @keyframes shake
+      10%, 90%
+        transform: translate3d(-1px, 0, 0)
+      20%, 80%
+        transform: translate3d(2px, 0, 0)
+      30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+      40%, 60%
+        transform: translate3d(4px, 0, 0)
+
+  &--white
+    color: #fff
+    border: 1px solid #fff
+    background: transparent
+    &:hover
+      border 2px solid #fff
+    &:focus
+      color: #fff
+      caret-color: #fff
+      border 1px solid #fff
+      box-shadow: 3px 3px 10px 0px #fff
+      background: transparent
+      &::placeholder
+        color: #fff
+    &::placeholder
+      color: #fff
+    &.error
+      background: transparent
+
+  &--gilroy
+    font-family: 'Gilroy-Regular'
+
+  &--about
+    padding: 0 32px;
+    color: #141414
+    border: 1px solid #fff
+    +above($breakpoints.sm)
+      padding: 0 20px;
+      height: 50px
+    +above($breakpoints.md)
+      padding: 0 25px;
+      height: 55px
+    +above($breakpoints.xxl)
+      padding: 0 32px;
+      height: 60px
+    &:focus
+      color: #141414
+      &::placeholder
+        color: #141414
+    &::placeholder
+      color: #141414
+
+  &--textarea
+    outline none
+    border: none
+    padding: 10px 10px 10px 32px
+    resize: none
+    height: 70px
+    width 100%
+    +above($breakpoints.sm)
+      padding: 15px 10px 10px 20px
+      height: 90px
+    +above($breakpoints.md)
+      padding: 17px 10px 10px 25px
+      height: 110px;
+    +above($breakpoints.xxl)
+      padding: 23px 10px 10px 32px
+      height: 120px
+
+  &--invest
+    +above($breakpoints.sm)
+      height: 50px
+    +above($breakpoints.md)
+      height: 55px
+    +above($breakpoints.xxl)
+      border-radius: 13px
+      padding: 0 25px;
+      height: 60px

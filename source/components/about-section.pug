@@ -1,0 +1,47 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      img.about-section__img-1(src="images/about-section-img-1.png" loading="lazy" width="979" height="1493" alt="image")
+      img.about-section__img-2(src="images/about-section-img-2.png" loading="lazy" width="1015" height="1015" alt="image")
+      h2.about-section__title.font-w-semi-bold.font-s-40.text-up
+        | Запустите бизнес с надежными 
+        br.no-br
+        | и опытными партнерами
+      .about-section__text.font-w-medium.font-s-24
+        span
+          | Мы работаем с 2022 года и за это время мы уже успели сформировать клиентскую базу 
+          br.no-br
+          | из 500+ человек и получить сотни положительных отзывов
+        span
+          | Позиционируем себя как деловая гостевая компания, обеспечивающая гостей 
+          br.no-br
+          | максимально комфортными квартирами в лучших районах Алматы
+        span
+          | Вы сможете запустить такой же успешный бизнес, с уже известным брендом, в любом 
+          br.no-br
+          | городе Казахстана, помогая развитию внутреннего туризма
+        span
+          | Вы получите все необходимые данные для успешного старта и будете работать при 
+          br.no-br
+          | нашей постоянной поддержке, быстро запуская все процессы
+        span
+          | Мы знаем, где точки роста бизнеса и поможем вам легко достигать желаемых 
+          br.no-br
+          | результатов и развивать масштабность вашей компании
+      .about-section__bottom
+        .about-section__bottom-block
+          img.about-section__bottom-logo(src="images/logo.svg" loading="lazy" width="138" height="138" alt="logo")
+          .about-section__bottom-text
+            span.font-w-medium.font-s-18 Напишите нам!
+            span.font-w-semi-bold.font-s-32.text-up
+              | Будем рады 
+              br.no-br
+              | ответить на все 
+              br.no-br
+              | ваши вопросы!
+        form.about-section__form(data-feedback-form)
+          textarea.input.input--about.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input.input--about(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.input--about(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.btn--about(type="submit") Задать вопрос основателям

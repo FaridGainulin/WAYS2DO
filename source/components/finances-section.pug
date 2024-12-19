@@ -1,0 +1,44 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-w-semi-bold.font-s-40.text-up Ключевые показатели франшизы
+      .finances-section__sub-title.font-w-medium.font-s-24
+        | На которые вы можете рассчитывать, открыв бизнес 
+        br.no-br
+        | по франшизе «WAYS2DO»
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="55" height="55" alt="icon")
+            span.font-w-semi-bold.font-s-29 4 263 000 тенге
+            span.font-s-19 ежемесячная <br> выручка
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="55" height="55" alt="icon")
+            span.font-w-semi-bold.font-s-29 с 1-го месяца
+            span.font-s-19 вы начнете <br> зарабатывать
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="55" height="55" alt="icon")
+            span.font-w-semi-bold.font-s-29 1 318 000 тенге
+            span.font-s-19 ежемесячная <br> чистая прибыль
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="55" height="55" alt="icon")
+            span.font-w-semi-bold.font-s-29 22 дня
+            span.font-s-19 для запуска <br> бизнеса
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="55" height="55" alt="icon")
+            span.font-w-semi-bold.font-s-29 30,9%
+            span.font-s-19 рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="55" height="55" alt="icon")
+            span.font-w-semi-bold.font-s-29 30 000 тенге
+            span.font-s-19 средний чек <br> одного клиента
+        .bullet-pagination
+      .finances-section__text.font-w-medium.font-s-24 Узнайте, какие инвестиции потребуются для старта
+      .finances-section__bottom
+        img.finances-section__bottom-logo(src="images/logo.svg" loading="lazy" width="116" height="116" alt="logo")
+        span.font-w-medium.font-s-24 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input.input--white.input--gilroy(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.input--white.input--gilroy(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.btn--white(type="submit") Скачать

@@ -1,0 +1,24 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-bold.font-s-48.text-up
+        | Зарабатывайте от 1,3 млн 
+        br.no-br
+        | тенге ежемесячно 
+        br.no-br
+        | на сдаче квартир в 
+        br.no-br
+        | посуточную аренду
+      .main-section__sub-title.font-w-medium.font-s-24 Запустите работу бизнеса всего за 22 дня
+      .main-section__bottom
+        span.font-w-medium.font-s-24
+          | Получите финмодель и партнерский договор, 
+          br.no-br
+          | где прописаны все условия сотрудничества
+        form.main-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") ПОЛУЧИТЬ
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1232" height="1546" alt="image")
